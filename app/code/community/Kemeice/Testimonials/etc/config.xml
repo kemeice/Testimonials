@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2013 kemeice (http://www.kemeice.com). All rights reserved.
+ * @license		http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+
+<config>
+	<modules>
+		<Kemeice_Testimonials>
+			<version>1.0.0</version>
+		</Kemeice_Testimonials>
+	</modules>
+
+	<frontend>
+		<routers>
+			<testimonials>
+				<use>standard</use>
+				<args>
+					<module>Kemeice_Testimonials</module>
+					<frontName>testimonials</frontName>
+				</args>
+			</testimonials>
+		</routers>
+
+		<translate>
+			<modules>
+				<Kemeice_Testimonials>
+					<files>
+						<default>Kemeice_Testimonials.csv</default>
+					</files>
+				</Kemeice_Testimonials>
+			</modules>
+		</translate>
+
+		<layout>
+			<updates>
+				<testimonials>
+					<file>testimonials.xml</file>
+				</testimonials>
+			</updates>
+		</layout>
+	</frontend>
+
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+                    <modules>
+                        <testimonials>Kemeice_Testimonials_Adminhtml</testimonials>
+                    </modules>
+                </args>
+			</adminhtml>
+		</routers>
+	</admin>
+
+	<stores>
+        <admin>
+            <design>
+                <theme>
+                    <default>kemeice</default>
+                </theme>
+            </design>
+        </admin>
+    </stores>
+
+	<adminhtml>
+		<layout>
+			<updates>
+				<testimonials>
+					<file>testimonials.xml</file>
+				</testimonials>
+			</updates>
+		</layout>
+
+		<translate>
+			<modules>
+				<Kemeice_Testimonials>
+					<files>
+						<default>Kemeice_Testimonials.csv</default>
+					</files>
+				</Kemeice_Testimonials>
+			</modules>
+		</translate>
+	</adminhtml>
+	<global>
+		<models>
+			<testimonials>
+				<class>Kemeice_Testimonials_Model</class>
+				<resourceModel>testimonials_mysql4</resourceModel>
+			</testimonials>
+			<testimonials_mysql4>
+				<class>Kemeice_Testimonials_Model_Mysql4</class>
+				<entities>
+					<testimonial>
+						<table>Kemeice_testimonials</table>
+					</testimonial>
+				</entities>
+			</testimonials_mysql4>
+		</models>
+
+		<resources>
+			<testimonials_setup>
+				<setup>
+					<module>Kemeice_Testimonials</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</testimonials_setup>
+
+			<testimonials_write>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</testimonials_write>
+
+			<testimonials_read>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</testimonials_read>
+		</resources>
+		<blocks>
+			<testimonials>
+				<class>Kemeice_Testimonials_Block</class>
+			</testimonials>
+		</blocks>
+
+		<helpers>
+			<testimonials>
+				<class>Kemeice_Testimonials_Helper</class>
+			</testimonials>
+		</helpers>
+	</global>
+
+	<default>
+		<testimonials>
+			<general>
+				<enable>1</enable>
+			</general>
+		</testimonials>
+	</default>
+</config>

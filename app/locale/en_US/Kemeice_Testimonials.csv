@@ -1,0 +1,31 @@
+ID, ID
+Name, Name
+Status, Status
+Action, Action
+Edit, Edit
+Delete, Delete
+Are you sure?, Are you sure?
+Change status, Change status
+Save and Continue Edit, Save and Continue Edit
+General, General
+General Information, General Information
+Description, Description
+Enabled, Enabled
+Disabled, Disabled
+
+Manage Testimonials, Manage Testimonials
+Add New Testimonial, Add New Testimonial
+Save Testimonial, Save Testimonial
+Delete Testimonial, Delete Testimonial
+Edit Testimonial '%s', Edit Testimonial '%s'
+ Information, Testimonial Information
+Testimonial Name, Testimonial Name
+Testimonial Manager, Testimonial Manager
+Testimonial Description, Testimonial Description
+Testimonial does not exist, Testimonial does not exist
+Testimonial was successfully saved, Testimonial was successfully saved
+Testimonial was successfully deleted, Testimonial was successfully deleted
+Please select Testimonial(s), Please select Testimonial(s)
+Total of %d Testimonial(s) were successfully deleted, Total of %d Testimonial(s) were successfully deleted
+Total of %d Testimonial(s) were successfully updated, Total of %d Testimonial(s) were successfully updated
+

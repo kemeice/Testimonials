@@ -1,0 +1,25 @@
+<?php
+
+
+?>
+
+<h2> 
+Testimonials </h2>
+<?php 
+$collection=$this->getTestimonials();
+
+foreach ($collection as $testimonial) {
+	
+	
+	echo $testimonial->getName()  ;
+	echo "<p>";
+	echo $testimonial->getDescription() ;
+	echo  "</p>";
+	
+}
+
+
+?>
+
+
+</h2>

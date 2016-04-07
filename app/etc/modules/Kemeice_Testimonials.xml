@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<config>
+	<modules>
+		<Kemeice_Testimonials>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Kemeice_Testimonials>
+	</modules>
+</config>

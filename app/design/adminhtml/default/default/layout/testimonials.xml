@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout version="1.0.0">
+	<adminhtml_testimonials_testimonial_index>
+		<reference name="content">
+			<block type="testimonials/adminhtml_testimonial" name="testimonial" />
+		</reference>
+	</adminhtml_testimonials_testimonial_index>
+</layout>

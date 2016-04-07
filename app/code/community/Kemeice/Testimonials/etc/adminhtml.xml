@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+		
+<config>
+	<menu>
+		<kemeice>
+			<title>Kemeice</title>
+			<sort_order>71</sort_order>
+			<children>
+				<testimonials module="testimonials">
+					<title>Testimonials</title>
+					<sort_order>71</sort_order>
+					<children>
+						<testimonial module="testimonials">
+							<title>Manage Testimonials</title>
+							<sort_order>0</sort_order>
+							<action>adminhtml/testimonials_testimonial</action>
+						</testimonial>
+						<testimonials_config module="testimonials">
+							<title>Configuration</title>
+							<sort_order>999</sort_order>
+							<action>adminhtml/system_config/edit/section/testimonials</action>
+						</testimonials_config>
+					</children>
+				</testimonials>
+			</children>
+		</kemeice>
+	</menu>
+
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<kemeice_Testimonials>
+						<title>Testimonials Module</title>
+						<sort_order>10</sort_order>
+					</kemeice_Testimonials>
+					<system>
+						<children>
+							<config>
+								<children>
+									<testimonials translate="title">
+										<title>Testimonials</title>
+										<sort_order>50</sort_order>
+									</testimonials>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>
